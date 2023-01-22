@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font: normal 18px/1.5'Montserrat', sans-serif;
+    background-color: #efefef;
+    margin: 20px;
+}
