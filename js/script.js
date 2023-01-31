@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "Napisac skrypt",
-            done: false,
-        },
-        {
-            content: "umyć uszy",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTasks = (newTaskContent) => {
         tasks.push({
@@ -16,6 +7,10 @@
         });
 
         render();
+    };
+
+    const clearInput = () => {
+        document.querySelector(".js-newTask").value = "";
     };
 
     const removeTask = (taskIndex) => {
@@ -51,13 +46,11 @@
 
         for (const task of tasks) {
             htmlString += `
-              <li 
-                 ${task.done ? " style=\"text-decoration: line-through\"" : ""}
-              >
-              <button class="js-done">zrobione ?</button>
-              <button class="js-remove">usuń</button>
-                ${task.content}
-              </li>
+             <li class= "tasks__item js-task">
+                 <button class="tasks__button tasks__button--done js-done">${task.done ? "✔" : ""}</button>
+                 <span class="tasks__content ${task.done ? "tasks__content--done" : ""}">${task.content}</span>
+                 <button class="js-remove tasks__button tasks__button--remove">🗑</button>
+            </li>
             `;
         }
 
@@ -76,6 +69,8 @@
         }
 
         addNewTasks(newTaskContent);
+
+        clearInput();
     };
 
     const init = () => {
