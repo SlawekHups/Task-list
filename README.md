@@ -9,7 +9,9 @@ List of tasks that you can visit here:  -> [Task-lis](https://slawekhups.github.
 
 ![enter image description here](https://slawekhups.github.io/Task-list/images/share.jpeg)
 
+## Action
 
+![enter image description here](https://slawekhups.github.io/Task-list/images/task-list.gif)
 ## Technologies used in the project:
 
 - HTML
