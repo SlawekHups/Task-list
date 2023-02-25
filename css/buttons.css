@@ -15,7 +15,7 @@
     .buttons__button {
         flex-basis: 100%;
         margin: 10px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 }
 
