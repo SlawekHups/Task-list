@@ -12,6 +12,10 @@
     grid-gap: 10px;
 }
 
+.tasks__item--hidden {
+    display: none;
+}
+
 .tasks__content--done {
     text-decoration: line-through;
 }
@@ -21,7 +25,7 @@
     width: 30px;
     color: white;
     border: none;
-    padding: 0;
+    transition: 0.3s;
 }
 
 .tasks__button--done {
@@ -30,6 +34,7 @@
 
 .tasks__button--done:hover {
     background-color: hsl(124, 59%, 45%);
+    transform: scale(1.1);
 }
 
 .tasks__button--done:active {
@@ -37,11 +42,12 @@
 }
 
 .tasks__button--remove {
-    background-color: hsl(353, 83%, 56%);
+    background-color: hsl(353, 83%, 50%);
 }
 
 .tasks__button--remove:hover {
     background-color: hsl(353, 83%, 36%);
+    transform: scale(1.1);
 }
 
 .tasks__button--remove:active {
