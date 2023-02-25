@@ -11,7 +11,7 @@ List of tasks that you can visit here:  -> [Task-lis](https://slawekhups.github.
 
 ## Action
 
-![enter image description here](.//images/task-list.gif)
+![enter image description here](.//images/new_task_list.gif)
 
 ## Technologies used in the project:
 
@@ -19,5 +19,6 @@ List of tasks that you can visit here:  -> [Task-lis](https://slawekhups.github.
 - CSS
 - JavaScript (ES6 + Features)
 - BEM 
-- GRID
+- GRID 
+- FLEX
 #
