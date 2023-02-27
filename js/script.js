@@ -14,7 +14,7 @@
         tasks = [
             ...tasks.slice(0, taskIndex),
             {
-                ...tasks.slice[taskIndex],
+                ...tasks[taskIndex],
                 done: !tasks[taskIndex].done,
             },
             ...tasks.slice(taskIndex + 1),
@@ -32,7 +32,7 @@
 
     const markAllTasksDone = () => {
         tasks = tasks.map((task) => ({
-            ...tasks,
+            ...task,
             done: true,
         }));
         render();
@@ -68,13 +68,13 @@
     };
 
     const renderTasks = () => {
-        const tasksToHTML = tasks => `
-        <li class= "tasks__item ${tasks.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-task">
+        const tasksToHTML = task => `
+        <li class= "tasks__item ${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-task">
            <button class="tasks__button tasks__button--done js-done">
-             ${tasks.done ? "✔" : ""}
+             ${task.done ? "✔" : ""}
            </button>
-           <span class="tasks__content ${tasks.done ? "tasks__content--done" : ""}">
-              ${tasks.content}
+           <span class="tasks__content ${task.done ? "tasks__content--done" : ""}">
+              ${task.content}
            </span>
            <button class="tasks__button tasks__button--remove js-remove ">
                🗑
