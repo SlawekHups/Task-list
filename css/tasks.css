@@ -27,6 +27,7 @@
     border: none;
     transition: 0.3s;
     padding: 0px;
+    cursor: pointer;
 }
 
 .tasks__button--done {
